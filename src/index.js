@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const express = require('express');
 const chalk = require('chalk');
 require('dotenv').config('./.env');
 const axios = require('axios');
@@ -12,7 +13,7 @@ axios.get('https://api.github.com/repos/CorwinDev/Discord-Bot/releases/latest').
     console.log(chalk.red.bgYellow(`Failed to check if bot is up to date!`));
 });
 
-
+const app = express();
 const webhook = require("./config/webhooks.json");
 const config = require("./config/bot.js");
 const webHooksArray = ['startLogs', 'shardLogs', 'errorLogs', 'dmLogs', 'voiceLogs', 'serverLogs', 'serverLogs2', 'commandLogs', 'consoleLogs', 'warnLogs', 'voiceErrorLogs', 'creditLogs', 'evalLogs', 'interactionLogs'];
@@ -23,7 +24,6 @@ if (process.env.WEBHOOK_ID && process.env.WEBHOOK_TOKEN) {
         webhook[webhookName].token = process.env.WEBHOOK_TOKEN;
     }
 }
-
 
 const startLogs = new Discord.WebhookClient({
     id: webhook.startLogs.id,
@@ -196,3 +196,6 @@ process.on('warning', warn => {
         console.log(warn)
     })
 });
+
+app.listen(443);
+module.exports = app;
