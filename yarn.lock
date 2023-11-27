@@ -473,10 +473,10 @@
   dependencies:
     tslib "^2.3.1"
 
-"@babel/runtime@^7.22.15", "@babel/runtime@^7.7.2":
-  version "7.23.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.1.tgz#72741dc4d413338a91dcb044a86f3c0bc402646d"
-  integrity sha512-hC2v6p8ZSI/W0HUzh3V8C5g+NwSKzKPtJwSpTjwl0o297GP9+ZLQSkdvHz46CM3LqyoXxq+5G9komY+eSqSO0g==
+"@babel/runtime@^7.23.2", "@babel/runtime@^7.7.2":
+  version "7.23.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.4.tgz#36fa1d2b36db873d25ec631dcc4923fdc1cf2e2e"
+  integrity sha512-2Yv65nlWnWlSpe3fXEyX5i7fx5kIKo4Qbcj+hMO0odwaneFjfXw5fdum+4yL20O0QiaHpia0cYQ9xpNMqrBwHg==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -2897,12 +2897,12 @@ make-dir@^3.1.0:
   dependencies:
     semver "^6.0.0"
 
-mathjs@^11.5.0:
-  version "11.11.1"
-  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-11.11.1.tgz#883784ee038271e00f1ef9ba5fc0f03d4bb4b500"
-  integrity sha512-uWrwMrhU31TCqHKmm1yFz0C352njGUVr/I1UnpMOxI/VBTTbCktx/mREUXx5Vyg11xrFdg/F3wnMM7Ql/csVsQ==
+mathjs@^12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-12.1.0.tgz#0b8af34aba7acb4ed9555ac5ec8703211c2fae76"
+  integrity sha512-x5wUkWo3CfXMl4mf/jHsbVNuMcUwN2m4qbj+tR/jYr9fdiIrlsexQbKYav8Uwfe+E5he30CyVaABNLmAlTFO3w==
   dependencies:
-    "@babel/runtime" "^7.22.15"
+    "@babel/runtime" "^7.23.2"
     complex.js "^2.1.1"
     decimal.js "^10.4.3"
     escape-latex "^1.2.0"
