@@ -8,7 +8,7 @@ module.exports = {
     discord: {
         id: process.env.DISCORD_ID,
         prefix: '!',
-        footer: `© TeamSM 2021 - ${new Date().getFullYear()}`, 
+        footer: `© TeamSM 2020 - ${new Date().getFullYear()}`, 
         botInvite: `https://discord.com/oauth2/authorize?&client_id=${process.env.DISCORD_ID}&scope=applications.commands+bot&permissions=8`,
         serverInvite: "https://discord.gg/YQm54ChcsN",
     },
