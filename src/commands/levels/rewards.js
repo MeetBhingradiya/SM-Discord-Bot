@@ -14,5 +14,3 @@ module.exports = async (client, interaction, args) => {
 
     await client.createLeaderboard(`🆙・Level rewards - ${interaction.guild.name}`, lb, interaction);
 }
-
- 

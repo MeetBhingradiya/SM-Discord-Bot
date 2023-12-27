@@ -14,5 +14,3 @@ module.exports = async (client, interaction, args) => {
 
     await client.createLeaderboard(`📨・Invites - ${interaction.guild.name}`, lb, interaction);
 }
-
- 

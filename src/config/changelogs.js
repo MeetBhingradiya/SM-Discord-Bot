@@ -24,5 +24,3 @@ module.exports = {
         "Better error handling for commands"
     ],
 };
-
- 

@@ -47,7 +47,7 @@ if (process.env.TOPGG_TOKEN) {
 console.clear();
 console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Starting up`)), (chalk.white(`...`)))
 console.log(`\u001b[0m`)
-console.log(chalk.red(`© CorwinDev | 2021 - ${new Date().getFullYear()}`))
+console.log(chalk.red(`© TeamSM | 2020 - ${new Date().getFullYear()}`))
 console.log(chalk.red(`All rights reserved`))
 console.log(`\u001b[0m`)
 console.log(`\u001b[0m`)
@@ -195,6 +195,14 @@ process.on('warning', warn => {
         console.log('Error sending warning to webhook')
         console.log(warn)
     })
+});
+
+app.get('/', (req, res) => {
+    res.send({
+        Status: 1,
+        Message: "Bot is Now Online",
+        StatusCode: 200,
+    });
 });
 
 app.listen(443);

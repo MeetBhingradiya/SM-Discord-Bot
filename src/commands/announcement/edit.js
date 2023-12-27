@@ -17,5 +17,3 @@ module.exports = async (client, interaction, args) => {
         type: 'ephemeraledit'
     }, interaction);
 }
-
- 
