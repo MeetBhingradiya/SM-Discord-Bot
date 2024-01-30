@@ -16,5 +16,3 @@ module.exports = async (client, interaction, args) => {
 
     client.createChannelSetup(choices[choice], channel, interaction);
 }
-
- 

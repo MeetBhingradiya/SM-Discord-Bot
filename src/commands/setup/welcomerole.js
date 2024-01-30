@@ -7,5 +7,3 @@ module.exports = async (client, interaction, args) => {
 
     client.createRoleSetup(welcomeRole, role, interaction)
 }
-
- 

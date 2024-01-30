@@ -49,5 +49,3 @@ module.exports = async (client, interaction, args) => {
         client.createChannelSetup(WordSnake, channel, interaction)
     }
 }
-
- 

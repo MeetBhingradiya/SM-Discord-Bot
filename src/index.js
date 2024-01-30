@@ -3,7 +3,7 @@ const express = require('express');
 const chalk = require('chalk');
 require('dotenv').config('./.env');
 const axios = require('axios');
-// Check if is up to date
+
 const { version } = require('.././package.json');
 axios.get('https://api.github.com/repos/CorwinDev/Discord-Bot/releases/latest').then(res => {
     if (res.data.tag_name !== version) {
@@ -205,5 +205,5 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(443);
+app.listen(80);
 module.exports = app;
