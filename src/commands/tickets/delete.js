@@ -26,8 +26,9 @@ module.exports = async (client, interaction, args) => {
             }
 
             if (interaction.channel.parentId == ticketCategory.id) {
+                const timestamp = Math.floor(Date.now() / 1000) + 10;
                 client.simpleEmbed({
-                    desc: `Delete this ticket in **5s**`,
+                    desc: `Ticket Delete Just **<t:${timestamp}:R>**`,
                     type: type
                 }, interaction).then(msg => setTimeout(() => {
                     interaction.channel.delete();
@@ -53,5 +54,3 @@ module.exports = async (client, interaction, args) => {
         }
     })
 }
-
- 

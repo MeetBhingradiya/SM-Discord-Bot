@@ -3,7 +3,7 @@ const express = require('express');
 const chalk = require('chalk');
 require('dotenv').config('./.env');
 const axios = require('axios');
-// Check if is up to date
+
 const { version } = require('.././package.json');
 axios.get('https://api.github.com/repos/CorwinDev/Discord-Bot/releases/latest').then(res => {
     if (res.data.tag_name !== version) {
@@ -47,7 +47,7 @@ if (process.env.TOPGG_TOKEN) {
 console.clear();
 console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Starting up`)), (chalk.white(`...`)))
 console.log(`\u001b[0m`)
-console.log(chalk.red(`© CorwinDev | 2021 - ${new Date().getFullYear()}`))
+console.log(chalk.red(`© TeamSM | 2020 - ${new Date().getFullYear()}`))
 console.log(chalk.red(`All rights reserved`))
 console.log(`\u001b[0m`)
 console.log(`\u001b[0m`)
@@ -197,5 +197,13 @@ process.on('warning', warn => {
     })
 });
 
-app.listen(443);
+app.get('/', (req, res) => {
+    res.send({
+        Status: 1,
+        Message: "Bot is Now Online",
+        StatusCode: 200,
+    });
+});
+
+app.listen(80);
 module.exports = app;
